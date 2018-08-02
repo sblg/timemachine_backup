@@ -1,0 +1,6 @@
+#create a 600GB sparse image
+hdiutil create -size 600g -type SPARSEBUNDLE -fs "HFS+J" TimeMachine.sparsebundle
+
+#use your virtual drive for backups
+sudo tmutil setdestination /Volumes/<nameYouGaveToYourImage>
+
